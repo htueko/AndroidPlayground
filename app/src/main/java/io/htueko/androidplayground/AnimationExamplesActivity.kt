@@ -16,6 +16,10 @@ class AnimationExamplesActivity : AppCompatActivity() {
             sendIntent(this@AnimationExamplesActivity, AnimFadeActivity::class.java)
         }
 
+        btn_animation_examples_change_bound.setOnClickListener {
+            sendIntent(this@AnimationExamplesActivity, ChangeBoundActivity::class.java)
+        }
+
     }
 
     private fun sendIntent(context: Context, cls: Class<*>) {
